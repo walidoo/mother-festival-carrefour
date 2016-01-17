@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>jQuery Mobile Web App</title>
+
+        <link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="jquery-2.1.1.js" type="text/javascript"></script>
+        <script src="result.js" type="text/javascript"></script>
+
+    </head> 
+
+    <body> 
+
+        <div data-role="page" id="pageone">
+
+            <div data-role="content" class="minHeight">
+
+                <div style="font-weight:bold;">1-how old is she?</div>
+
+                <form>
+
+                    <div><input type="radio" id="ageone" value="30-39" name="age"/>30-39</div>
+                    <div><input type="radio" id="agetwo" value="40-49" name="age"/>40-49</div>
+                    <div><input type="radio" id="agethree" value="50-59" name="age"/>50-59</div>
+                    <div><input type="radio" id="agefour" value="60 and above" name="age"/>
+                    60 and above</div>
+
+                </form>
+
+            </div>
+
+            <a href="#pagetwo" >
+                <input type="button" value="Next Question" style="text-decoration:none;"/>
+            </a>
+
+        </div>
+
+        <div data-role="page" id="pagetwo">
+
+            <div data-role="content" class="minHeight">
+
+                <div style="font-weight:bold;">2-is she  working?</div>
+
+                <form>
+
+                    <div><input type="radio" id="ansone" value="Yes" name="ans"/>Yes</div>
+                    <div><input type="radio" id="anstwo" value="No" name="ans"/>No</div>
+
+                </form>
+
+            </div>
+
+            <a href="#pagethree">
+                <input type="button" value="Next" style="text-decoration:none;"/>
+            </a>
+
+            <a href="#pageone">
+                <input type="button" value="Back" style="text-decoration:none;"/>
+            </a>
+
+        </div>
+
+        <div data-role="page" id="pagethree">
+
+            <div data-role="content" class="minHeight">	
+
+                <div style="font-weight:bold;">3-what is her interests?</div>
+
+                <form>
+
+                    <div><input type="radio" id="interone" value="Fashion" name="inter"/>Fashion</div>
+                    <div><input type="radio" id="intertwo" value="Accessories &  jewellery" name="inter"/>Accessories &  jewellery</div>
+                    <div><input type="radio" id="interthree" value="Perfumes & cosmetics , optical" name="inter"/>Perfumes & cosmetics , optical</div>
+                    <div><input type="radio" id="interfour" value="Shoes & bags" name="inter"/>Shoes & bags</div>
+                    <div><input type="radio" id="interfive" value="Household and electronics" name="inter"/>Household and electronics</div>
+
+                </form>
+
+            </div>
+
+            <a href="#pagefour">
+                <input type="button" value="Next" style="text-decoration:none;"/>
+            </a>
+
+            <a href="#pagetwo">
+                <input type="button" value="Back" style="text-decoration:none;"/>
+            </a>
+
+        </div>
+
+        <div data-role="page" id="pagefour">
+
+            <div data-role="content" class="minHeight">
+
+                <div style="font-weight:bold;">4-what's your budget?</div>
+
+                <form>
+
+                    <div><input type="radio" id="budgetone" value="Less than 200" name="budget"/>Less than 200</div>
+                    <div><input type="radio" id="budgettwo" value="200-400" name="budget"/>200-400</div>
+                    <div><input type="radio" id="budgetthree" value="400-600" name="budget"/>400-600</div>
+                    <div><input type="radio" id="budgetfour" value="600-1000" name="budget"/>600-1000</div>
+                    <div><input type="radio" id="budgetfive" value="1000 and above" name="budget"/>1000 and above</div>
+
+                </form>
+
+            </div>
+
+            <a href="#result">
+                <input type="button" value="Next" style="text-decoration:none;" onclick="condition()"/>
+            </a>
+
+            <a href="#pagethree">
+                <input type="button" value="Back" style="text-decoration:none;"/>
+            </a>
+
+        </div>
+
+        <div data-role="page" id="result">
+
+            <div data-role="content" class="minHeight">	
+
+                <div class="result_me"></div>
+
+            </div>
+
+            <a href="#pageone">
+                <input type="button" value="Back To Home" style="text-decoration:none;" onclick="removeCheck()"/>
+            </a>
+
+        </div>
+
+    </body>
+
+</html>

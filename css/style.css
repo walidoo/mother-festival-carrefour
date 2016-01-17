@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-content  { padding:23px; }
+form div { padding-left:30px; font-size:30px;}
+.ui-checkbox, .ui-radio { margin: 0.2em -50px 0.5em; } 
+.ui-content div { font-size:30px;}
+.ui-checkbox input, .ui-radio input { margin: 11px 0px 0px; }
+a:link, a:active, a:visited, a:hover { text-decoration:none!important;}
+.minHeight { min-height:300px;}
+.shop1 {display:inline-block;}
+.shop2 {display:inline-block;}
+.shop3 {display:inline-block;}
+.shop4 {display:inline-block;}
